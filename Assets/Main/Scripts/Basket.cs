@@ -5,13 +5,21 @@ using UnityEngine;
 public class Basket : MonoBehaviour
 {
     [SerializeField]
-    string _acceptedTag;
+    private List<string> _acceptedTag;
+    public const float returnToPoolWaitTime = 5;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag(_acceptedTag))
+        if (_acceptedTag.Contains(other.gameObject.tag))
         {
-            Debug.Log("accepted");
+            StartCoroutine(ReturnObjectToPool(other.gameObject));
         }
     }
+
+    IEnumerator ReturnObjectToPool(GameObject obj)
+    {
+        yield return new WaitForSeconds(returnToPoolWaitTime);
+        ObstaclePooling.instance.ReturnToPool(obj.tag, obj);
+    }
+
 }

@@ -8,6 +8,15 @@ TagManager:
   - TeleportIgnore
   - Fresh
   - Rotten
+  - Leg
+  - SnapCube
+  - Arm
+  - SnapCylinder
+  - Saucers
+  - Torso
+  - Head
+  - FreshApple
+  - RottenApple
   layers:
   - Default
   - TransparentFX
