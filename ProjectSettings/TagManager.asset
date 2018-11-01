@@ -17,6 +17,8 @@ TagManager:
   - Head
   - FreshApple
   - RottenApple
+  - FreshBanana
+  - RottenBanana
   layers:
   - Default
   - TransparentFX

@@ -20,6 +20,7 @@ public class ConveyorBelt : MonoBehaviour {
         if (ms)
         {
             ms._isOnConveyorBelt = false;
+            ms.rb.velocity = Vector3.zero;
             ms._isOnGround = false;
             ms._isInBasket = false;
         }
