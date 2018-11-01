@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
+        print(Basket.MissedFruits);
         if (Basket.MissedFruits >= 5)
         {
             gameOverText.SetActive(true);

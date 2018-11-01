@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VRTK;
+using UnityEngine.SceneManagement;
 
 public class MovementScript : MonoBehaviour
 {
@@ -38,10 +39,13 @@ public class MovementScript : MonoBehaviour
             
             rb.velocity = velocity * GameManager.instance.velocityMultiplier;
         }
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }      
         //else
         //{
         //    rb.velocity = Vector3.zero;
         //}
-            Debug.Log(rb.velocity);
 	}
 }
