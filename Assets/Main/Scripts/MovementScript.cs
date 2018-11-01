@@ -7,7 +7,7 @@ public class MovementScript : MonoBehaviour
 {
     [SerializeField]
     private Vector3 velocity = new Vector3(0,0,0.1f);
-    private Rigidbody rb;
+    public Rigidbody rb;
     private VRTK_InteractableObject interactableObject;
 
     public bool _isOnConveyorBelt;
@@ -38,10 +38,10 @@ public class MovementScript : MonoBehaviour
             
             rb.velocity = velocity * GameManager.instance.velocityMultiplier;
         }
-        else
-        {
-            rb.velocity = Vector3.zero;
-        }
+        //else
+        //{
+        //    rb.velocity = Vector3.zero;
+        //}
             Debug.Log(rb.velocity);
 	}
 }
