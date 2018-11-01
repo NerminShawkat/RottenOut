@@ -33,6 +33,12 @@ public class GameManager : MonoBehaviour
         if (Basket.MissedFruits >= 5)
         {
             gameOverText.SetActive(true);
+            StartCoroutine(Death());
         }
+    }
+
+    IEnumerator Death()
+    {
+        yield return new WaitForSeconds(1);
     }
 }
