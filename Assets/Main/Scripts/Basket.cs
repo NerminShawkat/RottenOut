@@ -7,13 +7,14 @@ public class Basket : MonoBehaviour
     [SerializeField]
     private List<string> _acceptedTag;
     public const float returnToPoolWaitTime = 5;
+    public static int MissedFruits = 0;
 
     private void OnTriggerEnter(Collider other)
     {
         if (_acceptedTag.Contains(other.gameObject.tag))
-        {
             StartCoroutine(ReturnObjectToPool(other.gameObject));
-        }
+        else
+            MissedFruits++;
     }
 
     IEnumerator ReturnObjectToPool(GameObject obj)

@@ -27,10 +27,10 @@ GameObject:
   - component: {fileID: 114560509741613028}
   - component: {fileID: 114578935206607472}
   - component: {fileID: 114713437479468918}
-  - component: {fileID: 65102150240445738}
+  - component: {fileID: 65663112060257824}
   m_Layer: 0
-  m_Name: FreshBanana
-  m_TagString: FreshBanana
+  m_Name: Feshpear
+  m_TagString: FreshPear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,13 +41,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1137074941414246}
-  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -0.10833931, y: 1.374798, z: -1.2073652}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.18023694, y: 1.3747982, z: -1.1939762}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &23184097838910488
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -63,8 +63,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ff18285fce813b24a811a136cefd5617, type: 2}
-  - {fileID: 2100000, guid: e40e1fcfd2321cd4d8a8ec92cbaf24d9, type: 2}
+  - {fileID: 2100000, guid: 905bd1bc74a0c75448784cd6aaf10d45, type: 2}
+  - {fileID: 2100000, guid: a2b9453b69ae60d4b807689716cba7f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90,7 +90,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1137074941414246}
-  m_Mesh: {fileID: 4300000, guid: 8a8c99dc5f8071544a1a323f96c56185, type: 3}
+  m_Mesh: {fileID: 4300000, guid: db1f417f705fe6c4ebe9d21f0e3aeab1, type: 3}
 --- !u!54 &54110426804514650
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -104,9 +104,9 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &65102150240445738
+--- !u!65 &65663112060257824
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,8 +116,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0938884, y: 0.47808444, z: 0.15099785}
-  m_Center: {x: 0, y: 0.02044451, z: 0.045756813}
+  m_Size: {x: 0.25391117, y: 0.25391123, z: 0.41737327}
+  m_Center: {x: 0, y: 0, z: 0.14787596}
 --- !u!114 &114560509741613028
 MonoBehaviour:
   m_ObjectHideFlags: 1

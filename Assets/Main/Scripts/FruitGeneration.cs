@@ -34,6 +34,6 @@ public class FruitGeneration : MonoBehaviour
             obj = ObstaclePooling.instance.SpawnFromPool(freshFruits[Random.Range(0, freshFruits.Count)],0);
         }
         obj.transform.position = startPoint.position;
-        obj.transform.rotation = Quaternion.identity;
+        //obj.transform.rotation = Quaternion.identity;
     }
 }
